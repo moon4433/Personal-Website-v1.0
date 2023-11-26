@@ -1,0 +1,137 @@
+@use "variables";
+@use "mixins";
+
+.portfolio {
+  &__grid {
+    display: grid;
+  }
+  &__selector-bar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+  }
+  &__selector-slider {
+    position: absolute;
+    height: 100%;
+    background-color: $raisinBlack;
+    transition: width 0.45s, left 0.45s;
+  }
+  &__selector-item {
+    padding: 0 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 1;
+    & h4 {
+      margin: 0;
+    }
+    &.active {
+    }
+  }
+  &__work-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 250px 250px 250px;
+    transition: 1s;
+    &.websites {
+      grid-template-rows: 250px 0px 0px;
+      & .one {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      & .four {
+        grid-row: 1;
+        grid-column: 2;
+      }
+      & .seven {
+        grid-row: 1;
+        grid-column: 3;
+      }
+    }
+  }
+  &__work-row {
+    display: grid;
+    width: fit-content;
+    justify-content: center;
+    transition: width 1s;
+  }
+  &__work {
+    height: 250px;
+    width: 400px;
+    position: relative;
+    transition: 1s;
+    top: 0%;
+    scale: 100%;
+    opacity: 100%;
+    display: inline-block;
+    &.animated {
+      top: 100%;
+      scale: 0%;
+      opacity: 0%;
+    }
+    &.deactive {
+    }
+    &.one {
+      background-color: cyan;
+      transition-delay: 0.1s;
+      grid-row: 1;
+      grid-column: 1;
+    }
+    &.two {
+      background-color: yellow;
+      transition-delay: 0.2s;
+      grid-row: 1;
+      grid-column: 2;
+    }
+    &.three {
+      background-color: red;
+      transition-delay: 0.3s;
+      grid-row: 1;
+      grid-column: 3;
+    }
+    &.four {
+      background-color: orange;
+      transition-delay: 0.4s;
+      grid-row: 2;
+      grid-column: 1;
+    }
+    &.five {
+      background-color: green;
+      transition-delay: 0.5s;
+      grid-row: 2;
+      grid-column: 2;
+    }
+    &.six {
+      background-color: purple;
+      transition-delay: 0.6s;
+      grid-row: 2;
+      grid-column: 3;
+    }
+    &.seven {
+      background-color: grey;
+      transition-delay: 0.7s;
+      grid-row: 3;
+      grid-column: 1;
+    }
+    &.eight {
+      background-color: blue;
+      transition-delay: 0.8s;
+      grid-row: 3;
+      grid-column: 2;
+    }
+    &.nine {
+      background-color: lightcoral;
+      transition-delay: 0.9s;
+      grid-row: 3;
+      grid-column: 3;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@use "variables";
+@use "mixins";
+
+.footer {
+  padding: 4rem 0;
+  &__container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  &__socials-container {
+    display: flex;
+    min-width: 225px;
+    justify-content: space-between;
+  }
+  &__copyright {
+    font-weight: light;
+    color: whitesmoke;
+    margin-bottom: 0;
+    margin-top: 35px;
+    &-color {
+      color: $slateBlue;
+    }
+  }
+}
+
+.back-to-top {
+  height: 0;
+  position: relative;
+
+  &__container {
+    width: fit-content;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  &__emblem {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: $slateBlue;
+    color: whitesmoke;
+    & i {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      &.one {
+        left: 50%;
+        top: 40%;
+      }
+      &.two {
+        left: 50%;
+        top: 65%;
+      }
+    }
+  }
+}
+
+.social {
+  width: 55px;
+  height: 55px;
+  background-color: $darkCyan;
+  transition: scale 0.25s, background-color 0.2s;
+  overflow: hidden;
+  &:hover,
+  &:focus {
+    scale: 90%;
+    background-color: $slateBlue;
+    & .social__emblem {
+      -moz-animation: social-animation 0.2s linear;
+      -webkit-animation: social-animation 0.2s linear;
+      animation: social-animation 0.2s linear;
+    }
+  }
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__emblem {
+    margin: 0;
+    color: whitesmoke;
+  }
+}
+
+/* Firefox */
+@-moz-keyframes social-animation {
+  from {
+    -moz-transform: translateY(0%);
+  }
+  50% {
+    -moz-transform: translateY(100%);
+  }
+  51% {
+    -moz-transform: translateY(-100%);
+  }
+  to {
+    -moz-transform: translateY(0%);
+  }
+}
+
+/* Chrome */
+@-webkit-keyframes social-animation {
+  from {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(100%);
+  }
+  51% {
+    -webkit-transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@keyframes social-animation {
+  from {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  50% {
+    -moz-transform: translateY(150%);
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
+  }
+  51% {
+    -moz-transform: translateY(-150%);
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+  }
+  to {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,33 @@
+@use "variables";
+
+body {
+  font-family: "Lato", sans-serif !important;
+  position: relative;
+  z-index: -3;
+}
+
+canvas {
+  display: block !important;
+  width: 100% !important;
+}
+
+section {
+  background-color: whitesmoke;
+  color: $raisinBlack;
+
+  &#portfolio {
+    background-color: rgb(240, 240, 240);
+  }
+  &#contact {
+    background-color: $raisinBlack;
+  }
+}
+
+a {
+  color: $silverLakeBlue;
+  text-decoration: none;
+}
+
+footer {
+  background-color: $darkmoonstone;
+}

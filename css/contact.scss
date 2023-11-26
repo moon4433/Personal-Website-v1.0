@@ -1,0 +1,57 @@
+@use "variables";
+@use "mixins";
+
+.contact {
+  & .section__header {
+    color: whitesmoke;
+  }
+  & .section__underline {
+    background-color: whitesmoke;
+    width: 8rem;
+    margin: 0.45rem 0 1.75rem;
+  }
+  &__note {
+    color: $moonstone;
+    margin: 0;
+    text-align: center;
+  }
+  &__form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  &__form {
+    display: grid;
+    width: 35rem;
+    & input[type="text"],
+    & textarea {
+      background-color: $darkmoonstone;
+      border-style: solid;
+      border-color: transparent;
+      border-radius: 5px;
+      padding: 7px;
+      color: whitesmoke;
+    }
+    & input[type="text"] {
+      &:nth-child(2) {
+        margin: 5px 0 0;
+      }
+    }
+    & textarea {
+      margin-top: 5px;
+      resize: vertical;
+    }
+    & input[type="submit"] {
+      margin-top: 1rem;
+      width: 7rem;
+      justify-self: end;
+      background-color: transparent;
+      color: whitesmoke;
+      border: 2px solid $moonstone;
+      font-weight: bold;
+      &:hover {
+        background-color: $moonstone;
+      }
+    }
+  }
+}

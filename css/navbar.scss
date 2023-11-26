@@ -1,0 +1,97 @@
+@use "variables";
+
+#navbar,
+.navbar-sticky {
+  background-color: $darkmoonstone;
+  border-bottom: 3px solid $moonstone;
+}
+
+.navbar-sticky {
+  display: none;
+}
+
+.navbar {
+  color: whitesmoke;
+  display: grid;
+  padding: 0.75rem 0;
+  width: 100%;
+  @include MaxWidth(600px) {
+    justify-content: end;
+  }
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: transform 0.4s;
+    transform: translateY(-100%);
+    &.active {
+      transform: translateY(0%);
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    @include MaxWidth(600px) {
+      transition: transform 0.4s;
+      position: absolute;
+      flex-direction: column;
+      z-index: -1;
+      background-color: $darkSlateBlue;
+      top: 100%;
+      width: 100%;
+      padding: 1.5rem 0;
+      transform: translateY(-100%);
+      &.active {
+        transform: translateY(0%);
+      }
+    }
+    & li {
+      margin: 0 1.5rem;
+      @include MaxWidth(600px) {
+        padding: 0 1.5rem;
+        margin: 0.25rem 0rem;
+      }
+    }
+  }
+  &__item {
+    display: block;
+    font-size: 1.25rem;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+    width: 100%;
+    &:hover {
+      color: $slateBlue;
+      transition: color 0.15s;
+    }
+    &.active {
+      transition: color 0.15s;
+      color: $slateBlue;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  @include MaxWidth(600px) {
+    display: grid;
+  }
+  &__flex {
+    justify-self: end;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__slice {
+    width: 100%;
+    height: 5px;
+    background-color: whitesmoke;
+  }
+}

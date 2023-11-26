@@ -1,0 +1,22 @@
+@use "variables";
+
+.section {
+  padding: 5rem 0;
+  &__header {
+    width: fit-content;
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+  &__underline {
+    width: 4rem;
+    height: 0.3rem;
+    background-color: $raisinBlack;
+    margin: 0.45rem 0 6.25rem;
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+}
