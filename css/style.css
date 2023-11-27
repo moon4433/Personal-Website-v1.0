@@ -12377,36 +12377,20 @@ body {
   margin: 0;
 }
 .portfolio__work-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   align-items: center;
   align-content: center;
   overflow: hidden;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 250px 250px 250px;
   transition: 1s;
 }
-.portfolio__work-container.websites {
-  grid-template-rows: 250px 0px 0px;
-}
-.portfolio__work-container.websites .one {
-  grid-row: 1;
-  grid-column: 1;
-}
-.portfolio__work-container.websites .four {
-  grid-row: 1;
-  grid-column: 2;
-}
-.portfolio__work-container.websites .seven {
-  grid-row: 1;
-  grid-column: 3;
-}
 .portfolio__work-row {
-  display: grid;
-  width: fit-content;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  transition: width 1s;
+  transition: 1s;
 }
 .portfolio__work {
   height: 250px;
@@ -12423,59 +12407,44 @@ body {
   scale: 0%;
   opacity: 0%;
 }
+.portfolio__work.animated.deactive {
+  width: 0;
+}
 .portfolio__work.one {
   background-color: cyan;
   transition-delay: 0.1s;
-  grid-row: 1;
-  grid-column: 1;
 }
 .portfolio__work.two {
   background-color: yellow;
   transition-delay: 0.2s;
-  grid-row: 1;
-  grid-column: 2;
 }
 .portfolio__work.three {
   background-color: red;
   transition-delay: 0.3s;
-  grid-row: 1;
-  grid-column: 3;
 }
 .portfolio__work.four {
   background-color: orange;
   transition-delay: 0.4s;
-  grid-row: 2;
-  grid-column: 1;
 }
 .portfolio__work.five {
   background-color: green;
   transition-delay: 0.5s;
-  grid-row: 2;
-  grid-column: 2;
 }
 .portfolio__work.six {
   background-color: purple;
   transition-delay: 0.6s;
-  grid-row: 2;
-  grid-column: 3;
 }
 .portfolio__work.seven {
   background-color: grey;
   transition-delay: 0.7s;
-  grid-row: 3;
-  grid-column: 1;
 }
 .portfolio__work.eight {
   background-color: blue;
   transition-delay: 0.8s;
-  grid-row: 3;
-  grid-column: 2;
 }
 .portfolio__work.nine {
   background-color: lightcoral;
   transition-delay: 0.9s;
-  grid-row: 3;
-  grid-column: 3;
 }
 
 .contact .section__header {

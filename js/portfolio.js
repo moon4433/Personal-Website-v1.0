@@ -1,6 +1,16 @@
 const portfolioWorkContainer = document.querySelector(
   ".portfolio__work-container"
 );
+
+const portfolioWorkColumnWebsites = document.querySelector(
+  ".portfolio__work-column.websites"
+);
+const portfolioWorkColumnGames = document.querySelector(
+  ".portfolio__work-column.games"
+);
+const portfolioWorkColumnAnimations = document.querySelector(
+  ".portfolio__work-column.animations"
+);
 const portfolioSelector = Array.from(
   document.body.querySelectorAll(".portfolio__selector-item")
 );
@@ -34,51 +44,41 @@ portfolioSelector.forEach((selector) => {
     selection = selector.textContent;
 
     if (selection === "Websites") {
-      portfolioWorkContainer.classList.add("websites");
       portfolioWork.forEach((work) => {
-        if (work.classList.contains("deactive")) {
+        if (work.classList.contains("animated")) {
           work.classList.remove("deactive");
           work.classList.remove("animated");
         }
         if (!work.classList.contains("website")) {
+          work.classList.add("deactive");
           work.classList.add("animated");
-          setTimeout(() => {
-            work.classList.add("deactive");
-          }, 1500);
         }
       });
     } else if (selection === "Games") {
       portfolioWork.forEach((work) => {
-        if (work.classList.contains("deactive")) {
+        if (work.classList.contains("animated")) {
           work.classList.remove("deactive");
           work.classList.remove("animated");
         }
         if (!work.classList.contains("game")) {
+          work.classList.add("deactive");
           work.classList.add("animated");
-          setTimeout(() => {
-            work.classList.add("deactive");
-          }, 1500);
         }
       });
     } else if (selection === "Animations") {
       portfolioWork.forEach((work) => {
-        if (work.classList.contains("deactive")) {
+        if (work.classList.contains("animated")) {
           work.classList.remove("deactive");
           work.classList.remove("animated");
         }
         if (!work.classList.contains("animation")) {
+          work.classList.add("deactive");
           work.classList.add("animated");
-          setTimeout(() => {
-            work.classList.add("deactive");
-          }, 1500);
         }
       });
     } else {
-      if (portfolioWorkContainer.classList.contains("websites")) {
-        portfolioWorkContainer.classList.remove("websites");
-      }
       portfolioWork.forEach((work) => {
-        if (work.classList.contains("deactive")) {
+        if (work.classList.contains("animated")) {
           work.classList.remove("deactive");
           work.classList.remove("animated");
         }
