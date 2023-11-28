@@ -11,12 +11,21 @@
     padding: 0;
     justify-content: center;
     position: relative;
+    transition: 0.75s;
+    opacity: 100%;
+    &.start {
+      opacity: 0;
+    }
   }
   &__selector-slider {
     position: absolute;
     height: 100%;
     background-color: $raisinBlack;
-    transition: width 0.45s, left 0.45s;
+    transition: width 0.45s, left 0.45s, opacity 0.75s;
+    opacity: 100%;
+    &.start {
+      opacity: 0;
+    }
   }
   &__selector-item {
     padding: 0 2rem;

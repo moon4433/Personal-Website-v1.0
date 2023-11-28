@@ -6,6 +6,9 @@ const portfolioUnderline = document.querySelector(
 const portfolioWorkContainer = document.querySelector(
   ".portfolio__work-container"
 );
+const portfolioWorkSelectorBar = document.querySelector(
+  ".portfolio__selector-bar"
+);
 
 const portfolioWorkColumnWebsites = document.querySelector(
   ".portfolio__work-column.websites"
@@ -28,6 +31,8 @@ let selection;
 
 portfolioTitle.classList.remove("start");
 portfolioUnderline.classList.remove("start");
+portfolioWorkSelectorBar.classList.remove("start");
+selectorSlider.classList.remove("start");
 portfolioWork.forEach((work) => {
   work.classList.remove("animated");
 });
