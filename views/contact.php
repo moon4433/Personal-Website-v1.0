@@ -1,12 +1,12 @@
 <div class="container section contact">
     <div class="row mx-auto">
         <div class="col-12">
-            <h2 class="section__header">CONTACT</h2>
+            <h2 class="section__header contact start">CONTACT</h2>
         </div>
     </div>
     <div class="row mx-auto">
         <div class="col-12">
-            <div class="section__underline"></div>
+            <div class="section__underline contact start"></div>
         </div>
     </div>
     <div class="row mx-auto">

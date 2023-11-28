@@ -1,12 +1,12 @@
 <div class="container section portfolio">
     <div class="row mx-auto">
         <div class="col-12">
-            <h2 class="section__header">PORTFOLIO</h2>
+            <h2 class="section__header portfolio start">PORTFOLIO</h2>
         </div>
     </div>
     <div class="row mx-auto">
         <div class="col-12">
-            <div class="section__underline"></div>
+            <div class="section__underline portfolio start"></div>
         </div>
     </div>
     <div class="row mx-auto">
@@ -20,15 +20,114 @@
                     <div class="portfolio__selector-slider"></div>
                 </ul>
                 <div class="portfolio__work-container">
-                    <div class="portfolio__work one website animated"></div>
-                    <div class="portfolio__work two game animated"></div>
-                    <div class="portfolio__work three animation animated"></div>
-                    <div class="portfolio__work four website animated"></div>
-                    <div class="portfolio__work five game animated"></div>
-                    <div class="portfolio__work six animation animated"></div>
-                    <div class="portfolio__work seven website animated"></div>
-                    <div class="portfolio__work eight game animated"></div>
-                    <div class="portfolio__work nine animation animated"></div>
+                    <div class="portfolio__work one website animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work two game animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work three animation animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work four website animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work five game animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work six animation animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work seven website animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work eight game animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__work nine animation animated">
+                        <div class="work__container">
+                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <div class="work__details">
+                                <div class="work__top">
+                                    <h4 class="work__title">Tic-Tac-Toe</h4>
+                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

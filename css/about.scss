@@ -7,8 +7,6 @@
 }
 
 .about {
-  &__upper {
-  }
   &__lower {
     margin: 50px auto 0;
   }
@@ -24,6 +22,25 @@
   }
   &__image-container {
     width: fit-content;
+    transition: 0.75s;
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 100%;
+    &.one {
+      transition-delay: 0.2s;
+    }
+    &.two {
+      transition-delay: 0.4s;
+    }
+    &.three {
+      transition-delay: 0.6s;
+    }
+    &.four {
+      transition-delay: 0.8s;
+    }
+    &.start {
+      transform: rotate3d(0, 1, 0, 90deg);
+      opacity: 0;
+    }
   }
   &__bullet {
     height: 115px;
@@ -50,6 +67,25 @@
       font-size: 2.75rem;
     }
   }
+  &__bottom {
+    opacity: 100%;
+    transition: 0.75s;
+    &.one {
+      transition-delay: 0.2s;
+    }
+    &.two {
+      transition-delay: 0.4s;
+    }
+    &.three {
+      transition-delay: 0.6s;
+    }
+    &.four {
+      transition-delay: 0.8s;
+    }
+    &.start {
+      opacity: 0;
+    }
+  }
   &__header {
     color: $slateBlue;
     margin: 0.3125rem 0;
@@ -63,6 +99,14 @@
   display: grid;
   justify-content: center;
   margin-bottom: 3rem;
+  position: relative;
+  transition: 0.75s;
+  left: 0;
+  opacity: 100%;
+  &.start {
+    left: -100%;
+    opacity: 0;
+  }
   &__image-container {
     text-align: center;
     -webkit-clip-path: polygon(
@@ -99,6 +143,14 @@
 }
 
 .skill-bar {
+  position: relative;
+  transition: 0.75s;
+  left: 0;
+  opacity: 100%;
+  &.start {
+    left: 100%;
+    opacity: 0;
+  }
   &__bar {
     display: flex;
     width: 100%;
@@ -146,6 +198,8 @@
   &__fill {
     height: 100%;
     background-color: $darkCyan;
+    transition: 0.75s;
+    transition-delay: 0.8s;
     &.html,
     &.css {
       width: 90%;
@@ -167,6 +221,9 @@
     }
     &.mysql {
       width: 40%;
+    }
+    &.start {
+      width: 0;
     }
   }
   &__percent {

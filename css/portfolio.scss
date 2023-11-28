@@ -25,10 +25,32 @@
     color: #fff;
     mix-blend-mode: difference;
     z-index: 1;
+    @include MaxWidth(1280px) {
+      padding: 0 1rem;
+      margin: 0 1rem;
+    }
+    @include MaxWidth(870px) {
+      padding: 0 0.5rem;
+      margin: 0 0.5rem;
+    }
+    @include MaxWidth(323px) {
+      padding: 0 0.25rem;
+      margin: 0 0.25rem;
+    }
+
     & h4 {
       margin: 0;
-    }
-    &.active {
+
+      @include MaxWidth(432px) {
+        font-size: larger;
+      }
+      @include MaxWidth(432px) {
+        font-size: medium;
+        font-weight: bold;
+      }
+      @include MaxWidth(365px) {
+        font-size: small;
+      }
     }
   }
   &__work-container {
@@ -56,49 +78,122 @@
     scale: 100%;
     opacity: 100%;
     display: inline-block;
+    @include MaxWidth(1440px) {
+      width: 300px;
+      height: 187.5px;
+    }
+    @include MaxWidth(1024px) {
+      width: 200px;
+      height: 125px;
+    }
+    @include MaxWidth(425px) {
+      width: 300px;
+      height: 187.5px;
+    }
     &.animated {
       top: 100%;
       scale: 0%;
       opacity: 0%;
       &.deactive {
         width: 0;
+        height: 187.5px;
+        @include MaxWidth(425px) {
+          width: 300px;
+          height: 0;
+        }
       }
     }
     &.one {
-      background-color: cyan;
       transition-delay: 0.1s;
     }
     &.two {
-      background-color: yellow;
       transition-delay: 0.2s;
     }
     &.three {
-      background-color: red;
       transition-delay: 0.3s;
     }
     &.four {
-      background-color: orange;
       transition-delay: 0.4s;
     }
     &.five {
-      background-color: green;
       transition-delay: 0.5s;
     }
     &.six {
-      background-color: purple;
       transition-delay: 0.6s;
     }
     &.seven {
-      background-color: grey;
       transition-delay: 0.7s;
     }
     &.eight {
-      background-color: blue;
       transition-delay: 0.8s;
     }
     &.nine {
-      background-color: lightcoral;
       transition-delay: 0.9s;
+    }
+  }
+}
+
+.work {
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    transition: 0.25s;
+    position: relative;
+    &:hover .work__details {
+      opacity: 100%;
+    }
+    &:hover .work__top {
+      top: 0;
+    }
+    &:hover .work__btn {
+      top: 0;
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  &__details {
+    opacity: 0%;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $raisinBlack;
+    color: whitesmoke;
+    transition: 0.25s;
+    text-align: center;
+    overflow: hidden;
+  }
+  &__top {
+    position: relative;
+    top: -100%;
+    transition: 0.45s;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__desc {
+    color: $slateBlue;
+    margin: 0;
+  }
+  &__btn {
+    background-color: transparent;
+    border-color: $moonstone;
+    border-width: 2px;
+    transition: background-color 0.25s, top 0.45s;
+    position: relative;
+    top: 150%;
+    &:hover {
+      background-color: $moonstone;
+      border-color: $moonstone;
     }
   }
 }

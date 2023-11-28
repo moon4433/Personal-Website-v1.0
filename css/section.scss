@@ -9,6 +9,20 @@
     position: relative;
     transform: translate(-50%, 0);
     left: 50%;
+    opacity: 100%;
+    transition: 0.75s;
+    &.about {
+      &.start {
+        left: 100%;
+        opacity: 0;
+      }
+    }
+    &.portfolio {
+      &.start {
+        left: 0%;
+        opacity: 0;
+      }
+    }
   }
   &__underline {
     width: 4rem;
@@ -18,5 +32,19 @@
     position: relative;
     transform: translate(-50%, 0);
     left: 50%;
+    opacity: 100%;
+    transition: 0.75s;
+    &.about {
+      &.start {
+        left: 0%;
+        opacity: 0;
+      }
+    }
+    &.portfolio {
+      &.start {
+        left: 100%;
+        opacity: 0;
+      }
+    }
   }
 }
