@@ -18,7 +18,7 @@ function setup() {
   pixelDensity(1);
   frameRate(29);
   let c;
-  c = createCanvas(window.innerWidth, window.innerHeight);
+  c = createCanvas(displayWidth, displayHeight);
 
   let originParent = c.parent();
   c.parent("header-background");
