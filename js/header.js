@@ -18,13 +18,20 @@ function setup() {
   pixelDensity(1);
   frameRate(29);
   let c;
-  c = createCanvas(displayWidth, displayHeight);
+  c = createCanvas(
+    document.documentElement.clientWidth,
+    document.documentElement.clientHeight
+  );
 
   let originParent = c.parent();
   c.parent("header-background");
   originParent.remove();
+
   window.addEventListener("resize", () => {
-    c = createCanvas(window.innerWidth, window.innerHeight);
+    c = createCanvas(
+      document.documentElement.clientWidth,
+      document.documentElement.clientHeight
+    );
     let originParent = c.parent();
     c.parent("header-background");
     originParent.remove();
