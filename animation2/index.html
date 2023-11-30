@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abstract Triangles</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      canvas {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="p5.min.js"></script>
+    <script>
+      let points = [];
+      const amount = 25;
+
+      let obstacle;
+      function setup() {
+        pixelDensity(1);
+        frameRate(30);
+        createCanvas(windowWidth, windowHeight);
+        for (let i = 0; i < amount; i++) {
+          points.push(new Point(random(width), random(height)));
+        }
+      }
+
+      function draw() {
+        background(0);
+        points.forEach((point) => {
+          point.run(points);
+        });
+      }
+      ///////////////////////////////////////////////////////////////
+
+      class Point {
+        constructor(x, y) {
+          this.position = createVector(x, y);
+          this.radius = 2.5;
+          this.velocity = p5.Vector.random2D();
+          this.acceleration = createVector();
+          this.maxSpeed = 0.5;
+          this.maxForce = 0.05;
+        }
+
+        run(points) {
+          this.update();
+          this.borders();
+          // this.render();
+          this.checkForTriangle(points);
+        }
+
+        update() {
+          this.velocity.add(this.acceleration);
+          this.velocity.limit(this.maxSpeed);
+          this.position.add(this.velocity);
+          this.acceleration.mult(0);
+        }
+
+        // Draw boid as a circle
+        render() {
+          fill(127);
+          stroke(200);
+          ellipse(this.position.x, this.position.y, 5, 5);
+        }
+
+        // Wraparound
+        borders() {
+          if (this.position.x < this.radius) {
+            this.velocity.x *= -1;
+          }
+          if (this.position.y < this.radius) {
+            this.velocity.y *= -1;
+          }
+          if (this.position.x > width - this.radius) {
+            this.velocity.x *= -1;
+          }
+          if (this.position.y > height - this.radius) {
+            this.velocity.y *= -1;
+          }
+        }
+
+        checkForTriangle(points) {
+          for (let x = 0; x < points.length; x++) {
+            for (let y = 0; y < points.length; y++) {
+              this.distanceOne = dist(
+                this.position.x,
+                this.position.y,
+                points[x].position.x,
+                points[x].position.y
+              );
+              this.distanceTwo = dist(
+                this.position.x,
+                this.position.y,
+                points[y].position.x,
+                points[y].position.y
+              );
+              if (this.distanceOne > 0 && this.distanceOne <= 255) {
+                if (this.distanceTwo > 0 && this.distanceTwo <= 255) {
+                  let triangle = new CreateTriangle(
+                    this,
+                    points[x],
+                    points[y],
+                    this.distanceOne,
+                    this.distanceTwo
+                  );
+                  triangle.run();
+                }
+              }
+            }
+          }
+        }
+      }
+
+      class CreateLine {
+        constructor(positionOne, positionTwo, distance) {
+          this.positionOne = positionOne;
+          this.positionTwo = positionTwo;
+          this.distance = distance;
+        }
+        run() {
+          stroke(255 - this.distance, 255 - this.distance);
+          line(
+            this.positionOne.x,
+            this.positionOne.y,
+            this.positionTwo.x,
+            this.positionTwo.y
+          );
+        }
+      }
+
+      class CreateTriangle {
+        constructor(pointOne, pointTwo, pointThree, distOne, distTwo) {
+          this.pointOne = pointOne;
+          this.pointTwo = pointTwo;
+          this.pointThree = pointThree;
+          this.distOne = distOne;
+          this.distTwo = distTwo;
+        }
+        run() {
+          this.distOne > this.distTwo
+            ? fill(255 - this.distOne)
+            : fill(255 - this.distTwo);
+          noStroke();
+          triangle(
+            this.pointOne.position.x,
+            this.pointOne.position.y,
+            this.pointTwo.position.x,
+            this.pointTwo.position.y,
+            this.pointThree.position.x,
+            this.pointThree.position.y
+          );
+        }
+      }
+      /////////////////////////////////////////////////////////////////
+    </script>
+  </body>
+</html>

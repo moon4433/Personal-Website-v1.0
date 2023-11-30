@@ -25,8 +25,8 @@
                             <img class="work__img" src="img/tictactoe.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Filler Website</h4>
+                                    <p class="work__desc">Filler</p>
                                 </div>
                                 <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
@@ -38,7 +38,7 @@
                             <div class="work__details">
                                 <div class="work__top">
                                     <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <p class="work__desc">HTML/CSS/JavaScript/jQuery</p>
                                 </div>
                                 <a href="game1/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
@@ -46,13 +46,13 @@
                     </div>
                     <div class="portfolio__work three animation animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/boids.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Boids</h4>
+                                    <p class="work__desc">HTML/CSS/JavaScript/p5</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="animation1/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>
@@ -61,8 +61,8 @@
                             <img class="work__img" src="img/tictactoe.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Filler Website 2</h4>
+                                    <p class="work__desc">Filler</p>
                                 </div>
                                 <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
@@ -82,13 +82,13 @@
                     </div>
                     <div class="portfolio__work six animation animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/triangles.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Abstract Triangles</h4>
+                                    <p class="work__desc">CSS/JavaScript/p5</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="animation2/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>
@@ -97,8 +97,8 @@
                             <img class="work__img" src="img/tictactoe.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Filler Website 3</h4>
+                                    <p class="work__desc">Filler</p>
                                 </div>
                                 <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
@@ -109,8 +109,8 @@
                             <img class="work__img" src="img/tictactoe.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Filler Game 3</h4>
+                                    <p class="work__desc">Filler</p>
                                 </div>
                                 <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
@@ -121,8 +121,8 @@
                             <img class="work__img" src="img/tictactoe.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Filler Animation 3</h4>
+                                    <p class="work__desc">Filler</p>
                                 </div>
                                 <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
