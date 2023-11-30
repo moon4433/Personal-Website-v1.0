@@ -40,7 +40,7 @@
                                     <h4 class="work__title">Tic-Tac-Toe</h4>
                                     <p class="work__desc">HTML/CSS/jQuery</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="game1/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>
@@ -70,13 +70,13 @@
                     </div>
                     <div class="portfolio__work five game animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/connectfour.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Tic-Tac-Toe</h4>
-                                    <p class="work__desc">HTML/CSS/jQuery</p>
+                                    <h4 class="work__title">Connect Four</h4>
+                                    <p class="work__desc">HTML/CSS/JavaScript</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="game2/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>

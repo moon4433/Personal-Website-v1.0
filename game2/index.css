@@ -1,0 +1,160 @@
+.game-container {
+  height: 100vh;
+  width: 1000px;
+  background-color: gray;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.announcements {
+  text-align: center;
+}
+
+.announcement-desc {
+  font-weight: bolder;
+}
+
+.announcement-color {
+  color: darkred;
+}
+
+.game {
+  height: 650px;
+  width: 650px;
+  background-color: navy;
+  border: 2px solid goldenrod;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.highlighter {
+  background-color: transparent;
+}
+
+.highlighter.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.space {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+}
+
+.space.free {
+  background-color: white;
+}
+
+.space.red {
+  background-color: darkred;
+}
+
+.space.black {
+  background-color: black;
+}
+
+.highlighter {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.game-controls {
+  text-align: center;
+}
+
+.reset-button {
+  background-color: goldenrod;
+  border-color: black;
+  border-width: 2px;
+  color: black;
+  font-weight: bold;
+}
+
+.reset-button:hover,
+.reset-button:focus {
+  background-color: yellow;
+  border-color: black;
+  color: black;
+  outline: none;
+  box-shadow: none;
+}
+
+.reset-button:active,
+.reset-button:active:focus,
+.reset-button:focus:active {
+  background-color: rgb(168, 127, 24);
+  border-color: black;
+  outline: none;
+  box-shadow: none;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .game-container {
+    width: 100vw;
+  }
+}
+@media (max-width: 650px) {
+  .game {
+    width: 550px;
+    height: 550px;
+  }
+  .space {
+    width: 65px;
+    height: 65px;
+  }
+}
+@media (max-width: 550px) {
+  .game {
+    width: 450px;
+    height: 450px;
+  }
+  .space {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 450px) {
+  .game {
+    width: 350px;
+    height: 350px;
+  }
+  .space {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .game {
+    width: 275px;
+    height: 275px;
+  }
+  .space {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 275px) {
+  .game {
+    width: 250px;
+    height: 250px;
+  }
+  .space {
+    width: 28px;
+    height: 28px;
+  }
+}
