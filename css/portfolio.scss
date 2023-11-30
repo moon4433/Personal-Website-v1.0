@@ -200,9 +200,15 @@
     transition: background-color 0.25s, top 0.45s;
     position: relative;
     top: 150%;
-    &:hover {
-      background-color: $moonstone;
-      border-color: $moonstone;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:focus:active {
+      background-color: $moonstone !important;
+      border-color: $moonstone !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
   }
 }

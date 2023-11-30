@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <style>
+      body {
+        margin: 25px;
+        background-color: #000;
+      }
+
+      .dropdown {
+        width: 500px;
+        font-size: 1.2rem;
+        height: 30px;
+        min-height: 30px;
+        overflow-y: clip;
+        transition: height 0.5s;
+        border: 1px solid #d4d4d4;
+        background-color: #e8e8e8;
+      }
+      .dropdown__container {
+        height: 30px;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        border-bottom: 1px solid #d4d4d4;
+      }
+      .dropdown__container:hover {
+        cursor: pointer;
+      }
+      .dropdown__container .arrow {
+        width: 28px;
+        height: 31px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: transform 0.7s;
+        float: right;
+      }
+      .dropdown__container .arrow.rotate {
+        transform: rotate(180deg);
+      }
+      .dropdown__container .arrow__left {
+        transform: translate(-100%, -50%) rotate(45deg);
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        width: 55%;
+        height: 5px;
+        background-color: #000;
+      }
+      .dropdown__container .arrow__right {
+        transform: translate(0%, -50%) rotate(-45deg);
+        position: absolute;
+        top: 50%;
+        left: 37%;
+        width: 55%;
+        height: 5px;
+        background-color: #000;
+      }
+      .dropdown__text {
+        margin: auto;
+        float: left;
+        width: 94%;
+        text-align: center;
+        border-right: 1px solid #d4d4d4;
+      }
+      .dropdown__text-display {
+        height: 30px;
+        line-height: 30px;
+      }
+      .dropdown__options {
+        position: relative;
+        width: 99.7%;
+        text-align: center;
+        bottom: 2px;
+        z-index: 0;
+      }
+      .dropdown__options.dropped {
+        height: 0;
+      }
+      .dropdown__options-item {
+        height: 30px;
+        line-height: 30px;
+        width: 90%;
+        margin: auto;
+        cursor: pointer;
+      }
+      .dropdown__options-item:hover {
+        background-color: #d4d4d4;
+      }
+      .dropdown__options-divider {
+        height: 1px;
+        width: 90%;
+        background-color: #d4d4d4;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dropdown" class="dropdown">
+      <div id="dropdown-container" class="dropdown__container">
+        <div class="dropdown__text">
+          <div id="text-display" class="dropdown__text-display">
+            -- Please Select an Item --
+          </div>
+        </div>
+        <div id="arrow" class="arrow">
+          <div class="arrow__left"></div>
+          <div class="arrow__right"></div>
+        </div>
+      </div>
+      <div id="dropdown__options" class="dropdown__options">
+        <div class="dropdown__options-item">Option 1</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 2</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 3</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 4</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 5</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 6</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 7</div>
+        <div class="dropdown__options-divider"></div>
+        <div class="dropdown__options-item">Option 8</div>
+      </div>
+    </div>
+    <script>
+      let dropdown = document.getElementById("dropdown");
+      let dropdownOptionsContainer =
+        document.getElementById("dropdown__options");
+      let dropdownOptions = document.querySelectorAll(
+        "#dropdown__options .dropdown__options-item"
+      );
+      document.getElementById("dropdown").style.maxHeight =
+        dropdown.offsetHeight +
+        dropdownOptionsContainer.offsetHeight -
+        2 +
+        "px";
+
+      for (let i = 0; i < dropdownOptions.length; i++) {
+        dropdownOptions[i].setAttribute("id", "" + (i + 1));
+      }
+
+      document
+        .getElementById("dropdown-container")
+        .addEventListener("click", function (event) {
+          if (
+            document.getElementById("dropdown").classList.contains("dropped")
+          ) {
+            document.getElementById("dropdown").classList.remove("dropped");
+            document.getElementById("arrow").classList.remove("rotate");
+            document.getElementById("dropdown").style.height =
+              dropdown.offsetHeight -
+              dropdownOptionsContainer.offsetHeight -
+              2 +
+              "px";
+          } else {
+            document.getElementById("dropdown").classList.add("dropped");
+            document.getElementById("arrow").classList.add("rotate");
+            document.getElementById("dropdown").style.height =
+              dropdown.offsetHeight +
+              dropdownOptionsContainer.offsetHeight -
+              2 +
+              "px";
+          }
+        });
+      dropdownOptions.forEach((option) => {
+        option.addEventListener("click", (event) => {
+          let that = option;
+          document.getElementById("text-display").innerHTML = that.innerHTML;
+          if (
+            document.getElementById("dropdown").classList.contains("dropped")
+          ) {
+            document.getElementById("dropdown").classList.remove("dropped");
+            document.getElementById("arrow").classList.remove("rotate");
+            document.getElementById("dropdown").style.height =
+              dropdown.offsetHeight -
+              dropdownOptionsContainer.offsetHeight -
+              2 +
+              "px";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

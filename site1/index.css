@@ -1,0 +1,57 @@
+#site-one {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #080a0a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#site-one #wordssection {
+  color: #f2f2f2;
+}
+
+#site-one #name {
+  color: #f2f2f2;
+  font-size: 4rem;
+  margin: 0 auto 1rem;
+}
+
+#site-one .personalinfo {
+  margin: 15px 0px;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+#site-one .personallink {
+  text-decoration: none;
+  color: #ff122b;
+}
+
+#site-one #picturessection {
+  margin-left: 5rem;
+}
+
+#site-one #img01 {
+  width: 500px;
+}
+
+@media (max-width: 1076px) {
+  #site-one #wordssection {
+    color: #f2f2f2;
+    margin: 1rem auto;
+    flex-grow: 1;
+    text-align: center;
+  }
+  #site-one .personalinfo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .personalinfo {
+    font-size: 0.85rem;
+  }
+}

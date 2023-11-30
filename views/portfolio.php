@@ -22,13 +22,13 @@
                 <div class="portfolio__work-container">
                     <div class="portfolio__work one website animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/work1.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Filler Website</h4>
-                                    <p class="work__desc">Filler</p>
+                                    <h4 class="work__title">Website 1</h4>
+                                    <p class="work__desc">HTML/CSS</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="site1/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>
@@ -118,13 +118,13 @@
                     </div>
                     <div class="portfolio__work nine animation animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/dropdown.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Filler Animation 3</h4>
-                                    <p class="work__desc">Filler</p>
+                                    <h4 class="work__title">Dropdown Menu</h4>
+                                    <p class="work__desc">HTML/CSS/JavaScript</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="animation3/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>

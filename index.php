@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="author" content="Keegan R Johnson" />
+    <meta name="description" content="The personal website of Keegan Johnson. Web/Game developer and hobbiest. Using this website to improve my skills and show them off at the same time." />
+    <meta name="keywords" content="Keegan R Johnson, keegan r johnson,Keegan Johnson,keegan johnson,Keegan,keegan,Johnson,johnson" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
 
