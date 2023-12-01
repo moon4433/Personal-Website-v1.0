@@ -58,13 +58,13 @@
                     </div>
                     <div class="portfolio__work four website animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/work02.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Filler Website 2</h4>
-                                    <p class="work__desc">Filler</p>
+                                    <h4 class="work__title">Website 2</h4>
+                                    <p class="work__desc">HTML/CSS/JavaScript</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="site2/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>
@@ -94,25 +94,25 @@
                     </div>
                     <div class="portfolio__work seven website animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/work03.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Filler Website 3</h4>
-                                    <p class="work__desc">Filler</p>
+                                    <h4 class="work__title">Website 3</h4>
+                                    <p class="work__desc">HTML/CSS/JavaScript</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="site3/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>
                     <div class="portfolio__work eight game animated">
                         <div class="work__container">
-                            <img class="work__img" src="img/tictactoe.png" alt="">
+                            <img class="work__img" src="img/work05.png" alt="">
                             <div class="work__details">
                                 <div class="work__top">
-                                    <h4 class="work__title">Filler Game 3</h4>
-                                    <p class="work__desc">Filler</p>
+                                    <h4 class="work__title">Checkers</h4>
+                                    <p class="work__desc">HTML/CSS/JavaScript</p>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-lg work__btn">Learn More!</a>
+                                <a href="game3/index.html" class="btn btn-primary btn-lg work__btn">Learn More!</a>
                             </div>
                         </div>
                     </div>

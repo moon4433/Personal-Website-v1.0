@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Keegan R Johnson Personal Website - Site 2</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body id="site-two">
+    <section class="contentholder">
+      <header>
+        <h1 id="nametitle">
+          <a href="index.html" id="title">Keegan Johnson</a>
+        </h1>
+        <section id="divider"></section>
+        <section id="whitespace">
+          <ul id="navbar">
+            <li id="home">
+              <a id="navitems" href="index.html">HOME</a>
+            </li>
+            <li id="about">
+              <a id="navitems" href="about.html">ABOUT</a>
+            </li>
+            <li id="otherwork">
+              <a id="navitems" href="other-work.html">OTHER WORK</a>
+            </li>
+            <li id="contact">
+              <a id="navitems" class="selected" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <section id="info">
+        <p
+          id="aboutme"
+          style="
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #cfd9d6;
+            border-bottom: 2px solid #cfd9d6;
+            margin-bottom: 110px;
+          "
+        >
+          To get in touch, email keeganjohnson43@gmail.com
+        </p>
+      </section>
+
+      <footer>
+        <section id="socialstuff">
+          <ul id="socialcontent">
+            <li>
+              <a href="https://www.facebook.com/keegan.johnson.9849"
+                ><img
+                  src="img/facebookhover.png"
+                  class="socialstuff"
+                  id="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/keeganjohnson43/"
+                ><img
+                  src="img/linkedhove.png"
+                  class="socialstuff"
+                  id="linkedin"
+                  data-state="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/WTFguy13"
+                ><img
+                  src="img/twitterhover.png"
+                  class="socialstuff"
+                  id="twitter"
+                  data-state="twitter"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </section>
+
+    <script>
+      let collider = document.getElementById("socialcontent");
+      let facebook = document.getElementById("facebook");
+      let linkedin = document.getElementById("linkedin");
+      let twitter = document.getElementById("twitter");
+
+      collider.addEventListener("mouseover", function (e) {
+        facebook.src = "img/facebooknohover.png";
+        linkedin.src = "img/linkednohover.png";
+        twitter.src = "img/twitternohover.png";
+      });
+      collider.addEventListener("mouseleave", function (e) {
+        facebook.src = "img/facebookhover.png";
+        linkedin.src = "img/linkedhove.png";
+        twitter.src = "img/twitterhover.png";
+      });
+      facebook.addEventListener("mouseenter", function (e) {
+        facebook.src = "img/facebookhover.png";
+      });
+      linkedin.addEventListener("mouseenter", function (e) {
+        linkedin.src = "img/linkedhove.png";
+      });
+      twitter.addEventListener("mouseenter", function (e) {
+        twitter.src = "img/twitterhover.png";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keegan R Johnson Personal Website - Site 2</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body id="site-three">
+    <header class="header contact">
+      <a href="index.html">
+        <img src="img/Logo.png" class="logo" />
+      </a>
+      <ul class="mainmenu">
+        <li class="mainmenu-item">
+          <a href="index.html" class="mainmenu-link select"> home </a>
+        </li>
+        <li class="mainmenu-item">
+          <a href="about.html" class="mainmenu-link"> about </a>
+        </li>
+        <li class="mainmenu-item">
+          <a href="contact.html" class="mainmenu-link"> contact </a>
+        </li>
+        <li class="mainmenu-item">
+          <a href="gallery.html" class="mainmenu-link" id="mainmenu-lastitem">
+            gallery
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <section id="contactinfo">
+      <h1 id="contactheader">Contact</h1>
+      <h3 id="contactname">Keegan Johnson</h3>
+      <h4 id="contactteleemail">Email: keeganjohnson43@email.com</h4>
+    </section>
+    <footer class="footer">
+      <p id="sociallinks">
+        Connect with me on
+        <a
+          href="https://www.linkedin.com/in/keeganjohnson43?trk=people-guest_people_search-card"
+          id="sociallink-clickable"
+          >LinkedIn</a
+        >
+        or follow me on
+        <a href="https://twitter.com/WTFguy13" id="sociallink-clickable"
+          >Twitter</a
+        >
+      </p>
+      <p>
+        <a id="boringstuffR" href="terms-of-use.html">Terms of Use</a>
+        <a id="dot">•</a>
+        <a id="boringstuffL" href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function (e) {
+        const target = document.querySelectorAll(".scroll");
+
+        var index = 0,
+          length = target.length;
+        for (index; index < length; index++) {
+          var pos = window.pageYOffset * target[index].dataset.rate;
+
+          if (target[index].dataset.direction === "vertical") {
+            if (pos >= 800) pos = 800;
+            target[index].style.transform =
+              "translate3d(0px," + pos + "px, 0px)";
+          }
+          if (target[index].dataset.direction === "verticalN2") {
+            if (pos >= 2000) pos = 2000;
+            target[index].style.transform =
+              "translate3d(0px, " + pos + "px, 0px)";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
