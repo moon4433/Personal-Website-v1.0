@@ -23,6 +23,12 @@
         opacity: 0;
       }
     }
+    &.contact {
+      &.start {
+        left: 100%;
+        opacity: 0;
+      }
+    }
   }
   &__underline {
     width: 4rem;
@@ -43,6 +49,12 @@
     &.portfolio {
       &.start {
         left: 100%;
+        opacity: 0;
+      }
+    }
+    &.contact {
+      &.start {
+        left: 0%;
         opacity: 0;
       }
     }

@@ -15,7 +15,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
-
     <header id="header" class="container-fluid gx-0">
       <div class="row gx-0 d-block">
         <div class="col-md-12 d-block">
@@ -53,6 +52,11 @@
         </div>
       </div>
     </section>
+    <div class="about-title-height"></div>
+    <div class="about-underline-height"></div>
+    <div class="about-bullet-height"></div>
+    <div class="about-desc-height"></div>
+    <div class="about-bio-height"></div>
     <section id="about" class="container-fluid gx-0">
       <div class="row gx-0">
         <div class="col-md-7 mx-auto">
@@ -60,6 +64,10 @@
         </div>
       </div>
     </section>
+    <div class="port-title-height"></div>
+    <div class="port-underline-height"></div>
+    <div class="port-slider-height"></div>
+    <div class="port-work-height"></div>
     <section id="portfolio" class="container-fluid gx-0">
       <div class="row gx-0">
         <div class="col-md-8 mx-auto">
@@ -67,6 +75,10 @@
         </div>
       </div>
     </section>
+    <div class="contact-title-height"></div>
+    <div class="contact-underline-height"></div>
+    <div class="contact-note-height"></div>
+    <div class="contact-form-height"></div>
     <section id="contact" class="container-fluid gx-0">
       <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
         <path d="M0 0 L50 100 L100 0 Z" fill="rgb(240, 240, 240)" stroke="rgb(240, 240, 240)"></path>
@@ -90,6 +102,7 @@
     <script src="js/navbar.js"></script>
     <script src="js/about.js"></script>
     <script src="js/portfolio.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script>

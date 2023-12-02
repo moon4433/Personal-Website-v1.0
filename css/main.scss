@@ -14,7 +14,7 @@ canvas {
 section {
   background-color: whitesmoke;
   color: $raisinBlack;
-
+  overflow: hidden;
   &#portfolio {
     background-color: rgb(240, 240, 240);
   }
@@ -30,4 +30,125 @@ a {
 
 footer {
   background-color: $darkmoonstone;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.about-title-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: red;
+  position: absolute;
+  top: 210px;
+  z-index: 9;
+}
+
+.about-underline-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: blue;
+  position: absolute;
+  top: 230px;
+  z-index: 9;
+}
+
+.about-bullet-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: green;
+  position: absolute;
+  top: 445px;
+  z-index: 9;
+}
+
+.about-desc-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: chartreuse;
+  position: absolute;
+  top: 545px;
+  z-index: 9;
+}
+
+.about-bio-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: brown;
+  position: absolute;
+  top: 870px;
+  z-index: 9;
+}
+
+.port-title-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: red;
+  position: absolute;
+  top: 1281.3px;
+  z-index: 9;
+}
+
+.port-underline-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: green;
+  position: absolute;
+  top: 1381.3px;
+  z-index: 9;
+}
+
+.port-slider-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: blue;
+  position: absolute;
+  top: 1519.3px;
+  z-index: 9;
+}
+
+.port-work-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: purple;
+  position: absolute;
+  top: 1745.3px;
+  z-index: 9;
+}
+
+.contact-title-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: red;
+  position: absolute;
+  top: 2470.3px;
+  z-index: 9;
+}
+
+.contact-underline-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: green;
+  position: absolute;
+  top: 2500.3px;
+  z-index: 9;
+}
+
+.contact-note-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: blue;
+  position: absolute;
+  top: 2536.3px;
+  z-index: 9;
+}
+
+.contact-form-height {
+  // height: 1px;
+  width: 100%;
+  // background-color: purple;
+  position: absolute;
+  top: 2711.3px;
+  z-index: 9;
 }

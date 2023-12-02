@@ -11919,6 +11919,7 @@ canvas {
 section {
   background-color: whitesmoke;
   color: #1b1725;
+  overflow: hidden;
 }
 section#portfolio {
   background-color: rgb(240, 240, 240);
@@ -11934,6 +11935,101 @@ a {
 
 footer {
   background-color: #09171a;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.about-title-height {
+  width: 100%;
+  position: absolute;
+  top: 210px;
+  z-index: 9;
+}
+
+.about-underline-height {
+  width: 100%;
+  position: absolute;
+  top: 230px;
+  z-index: 9;
+}
+
+.about-bullet-height {
+  width: 100%;
+  position: absolute;
+  top: 445px;
+  z-index: 9;
+}
+
+.about-desc-height {
+  width: 100%;
+  position: absolute;
+  top: 545px;
+  z-index: 9;
+}
+
+.about-bio-height {
+  width: 100%;
+  position: absolute;
+  top: 870px;
+  z-index: 9;
+}
+
+.port-title-height {
+  width: 100%;
+  position: absolute;
+  top: 1281.3px;
+  z-index: 9;
+}
+
+.port-underline-height {
+  width: 100%;
+  position: absolute;
+  top: 1381.3px;
+  z-index: 9;
+}
+
+.port-slider-height {
+  width: 100%;
+  position: absolute;
+  top: 1519.3px;
+  z-index: 9;
+}
+
+.port-work-height {
+  width: 100%;
+  position: absolute;
+  top: 1745.3px;
+  z-index: 9;
+}
+
+.contact-title-height {
+  width: 100%;
+  position: absolute;
+  top: 2470.3px;
+  z-index: 9;
+}
+
+.contact-underline-height {
+  width: 100%;
+  position: absolute;
+  top: 2500.3px;
+  z-index: 9;
+}
+
+.contact-note-height {
+  width: 100%;
+  position: absolute;
+  top: 2536.3px;
+  z-index: 9;
+}
+
+.contact-form-height {
+  width: 100%;
+  position: absolute;
+  top: 2711.3px;
+  z-index: 9;
 }
 
 /* Index Begins */
@@ -12177,6 +12273,10 @@ body {
   left: 0%;
   opacity: 0;
 }
+.section__header.contact.start {
+  left: 100%;
+  opacity: 0;
+}
 .section__underline {
   width: 4rem;
   height: 0.3rem;
@@ -12194,6 +12294,10 @@ body {
 }
 .section__underline.portfolio.start {
   left: 100%;
+  opacity: 0;
+}
+.section__underline.contact.start {
+  left: 0%;
   opacity: 0;
 }
 
@@ -12664,6 +12768,11 @@ body {
   color: #4fb0c6;
   margin: 0;
   text-align: center;
+  opacity: 100%;
+  transition: 0.75s;
+}
+.contact__note.start {
+  opacity: 0%;
 }
 .contact__form-container {
   display: flex;
@@ -12682,12 +12791,35 @@ body {
   padding: 7px;
   color: whitesmoke;
 }
+.contact__form input[type=text] {
+  position: relative;
+  opacity: 100%;
+  transition: 0.75s;
+  left: 0%;
+}
+.contact__form input[type=text]:nth-child(1) {
+  transition-delay: 0.2s;
+}
 .contact__form input[type=text]:nth-child(2) {
   margin: 5px 0 0;
+  transition-delay: 0.4s;
+}
+.contact__form input[type=text].start {
+  left: -100%;
+  opacity: 0%;
 }
 .contact__form textarea {
   margin-top: 5px;
   resize: vertical;
+  position: relative;
+  transition: opacity 0.75s, left 0.75s;
+  transition-delay: 0.6s;
+  opacity: 100%;
+  left: 0%;
+}
+.contact__form textarea.start {
+  left: -100%;
+  opacity: 0%;
 }
 .contact__form input[type=submit] {
   margin-top: 1rem;
@@ -12697,6 +12829,15 @@ body {
   color: whitesmoke;
   border: 2px solid #4fb0c6;
   font-weight: bold;
+  position: relative;
+  transition: 0.75s;
+  transition-delay: 1s;
+  opacity: 100%;
+  top: 0%;
+}
+.contact__form input[type=submit].start {
+  top: 100%;
+  opacity: 0%;
 }
 .contact__form input[type=submit]:hover {
   background-color: #4fb0c6;

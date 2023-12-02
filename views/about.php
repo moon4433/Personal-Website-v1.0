@@ -11,10 +11,10 @@
     </div>
     <?php include "modules/about-bullets.php" ?>
     <div class="row about__lower">
-        <div class="col-xl-5 col-md-12">
+        <div class="col-xl-5 col-md-12 overflow-hidden">
         <?php include 'modules/about-bio.php' ?>
         </div>
-        <div class="col-xl-7 col-md-12">
+        <div class="col-xl-7 col-md-12 overflow-hidden">
             <?php include 'modules/about-skill-bar.php' ?>
         </div>
     </div>

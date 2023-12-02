@@ -29,14 +29,6 @@ const selectorSlider = document.querySelector(".portfolio__selector-slider");
 
 let selection;
 
-portfolioTitle.classList.remove("start");
-portfolioUnderline.classList.remove("start");
-portfolioWorkSelectorBar.classList.remove("start");
-selectorSlider.classList.remove("start");
-portfolioWork.forEach((work) => {
-  work.classList.remove("animated");
-});
-
 portfolioSelector.forEach((selector) => {
   const selectorRect = selector.getBoundingClientRect();
 
@@ -95,7 +87,7 @@ setInterval(() => {
         work.classList.add("deactive");
         work.classList.add("animated");
       }
-    } else {
+    } else if (selection === "All") {
       if (work.classList.contains("animated")) {
         work.classList.remove("deactive");
         work.classList.remove("animated");

@@ -9,17 +9,3 @@ const aboutBullets = Array.from(
 const aboutBulletsDesc = Array.from(
   document.querySelectorAll(".about-bullets__bottom")
 );
-
-aboutTitle.classList.remove("start");
-aboutUnderline.classList.remove("start");
-skillsBar.classList.remove("start");
-aboutBio.classList.remove("start");
-aboutBullets.forEach((bullet) => {
-  bullet.classList.remove("start");
-});
-aboutBulletsDesc.forEach((desc) => {
-  desc.classList.remove("start");
-});
-skillsFillBar.forEach((bar) => {
-  bar.classList.remove("start");
-});

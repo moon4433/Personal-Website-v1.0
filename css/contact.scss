@@ -14,6 +14,11 @@
     color: $moonstone;
     margin: 0;
     text-align: center;
+    opacity: 100%;
+    transition: 0.75s;
+    &.start {
+      opacity: 0%;
+    }
   }
   &__form-container {
     display: flex;
@@ -33,13 +38,34 @@
       color: whitesmoke;
     }
     & input[type="text"] {
+      position: relative;
+      opacity: 100%;
+      transition: 0.75s;
+      left: 0%;
+      &:nth-child(1) {
+        transition-delay: 0.2s;
+      }
       &:nth-child(2) {
         margin: 5px 0 0;
+        transition-delay: 0.4s;
+      }
+      &.start {
+        left: -100%;
+        opacity: 0%;
       }
     }
     & textarea {
       margin-top: 5px;
       resize: vertical;
+      position: relative;
+      transition: opacity 0.75s, left 0.75s;
+      transition-delay: 0.6s;
+      opacity: 100%;
+      left: 0%;
+      &.start {
+        left: -100%;
+        opacity: 0%;
+      }
     }
     & input[type="submit"] {
       margin-top: 1rem;
@@ -49,6 +75,15 @@
       color: whitesmoke;
       border: 2px solid $moonstone;
       font-weight: bold;
+      position: relative;
+      transition: 0.75s;
+      transition-delay: 1s;
+      opacity: 100%;
+      top: 0%;
+      &.start {
+        top: 100%;
+        opacity: 0%;
+      }
       &:hover {
         background-color: $moonstone;
       }
